@@ -1,0 +1,132 @@
+.help {
+    padding: 80px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        .top {
+            display: flex;
+            gap: 120px;
+            justify-content: space-between;
+            align-items: center;
+            .help__content__el {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                min-width: 300px;
+                flex: 1;
+                .title {
+                    @include title(#31373f, 400);
+                    span {
+                        font-size: 42px;
+                    }
+                }
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    &__card {
+                        position: relative;
+                        @include btn(#c29969, 700);
+                        &::before {
+                            width: 100%;
+                            height: 1px;
+                            border-radius: 5px;
+                            content: '';
+                            position: absolute;
+                            bottom: -10px;
+                            background-color: #c2996933;
+                        }
+                    }
+                }
+                .wrap {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 42px;
+                    .wrap__open {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
+                        @include text(#31373f, 400);
+                        &__summary {
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            @include btn(#0f8a9f, 700);
+
+                            .icon {
+                                color: #0f8a9f;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .btn {
+                    box-shadow:
+                        -20px -20px 20px 0px #ffffff80,
+                        10px 10px 20px 0px #aeaec066,
+                        4px 4px 6px 0px #ffffff80 inset;
+                    background-color: #f0f0f3;
+                    padding: 20px 30px;
+                    border-radius: 91px;
+                    @include btn(#0f8a9f, 700);
+                    text-transform: uppercase;
+                }
+            }
+            .help__content__swiper {
+                overflow: hidden;
+                min-width: 300px;
+                flex: 1;
+                .swiper1 {
+                    overflow: hidden;
+                    position: relative;
+                    width: 488px;
+                }
+                .spann {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    margin: 40px 0px 0px 35%;
+                    .btns__prev,
+                    .btns__next {
+                        cursor: pointer;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: #f7f5f5;
+                        color: #e2e2e7;
+                        font-size: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            color: #f7f5f5;
+                            background-color: #e2e2e7;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            gap: 5px;
+            margin-left: 20%;
+            &__right{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;  
+                align-items: center;
+                .wrapper__text{
+                    @include text(#0F8A9F, 400);
+                    width: 80%;
+                }
+                &__frame{
+                    width: 111px;
+                    height: 110px;
+                }
+            }
+        }
+    }
+}

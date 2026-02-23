@@ -1,0 +1,46 @@
+.scroller {
+    padding: 40px 0;
+    overflow: hidden;
+    .wrapper {
+        .swiper {
+            overflow: visible;
+            position: relative;
+        }
+        .swiper-slide {
+            position: relative;
+            width: 284px;
+            height: 540px;
+            transition: all 0.3s ease;
+            opacity: 0.8;
+            &:hover {
+                opacity: 1;
+                transform: translateY(-10px);
+            }
+            .back {
+                width: 284px;
+                height: 540px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+            .icon {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 60%;
+                font-size: 25px;
+                transform: translate(-60%, -50%);
+                background-color: #0f8a9f;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 2;
+            }
+        }
+    }
+}

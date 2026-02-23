@@ -1,0 +1,25 @@
+@mixin title($color, $weight) {
+    color: $color;
+    font-weight: $weight;
+    font-size: 70px;
+}
+@mixin section-Title($color, $weight) {
+    color: $color;
+    font-size: 48px;
+    font-weight: $weight;
+}
+@mixin content($color, $weight) {
+    color: $color;
+    font-weight: $weight;
+    font-size: 32px;
+}
+@mixin btn($color, $weight) {
+    color: $color;
+    font-weight: $weight;
+    font-size: 24px;
+}
+@mixin text($color, $weight) {
+    color: $color;
+    font-weight: $weight;
+    font-size: 18px;
+}

@@ -1,0 +1,92 @@
+.about {
+    padding: 80px 0;
+    position: relative;
+    &__content {
+        display: flex;
+        gap: 115px;
+        align-items: center;
+        &__img {
+            background-color: $white;
+            border-radius: 50%;
+            min-width: 300px;
+            flex: 1;
+            width: 880px;
+            height: 880px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow:
+                -20px -20px 20px 0px #ffffff80,
+                10px 10px 20px 0px #aeaec066,
+                4px 4px 6px 0px #ffffff80 inset;
+            .wrapper {
+                width: 680px;
+                height: 680px;
+                border-radius: 50%;
+                background-color: $white;
+                box-shadow:
+                    -20px -20px 20px 0px #ffffff80,
+                    10px 10px 20px 0px #aeaec066,
+                    4px 4px 6px 0px #ffffff80 inset;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 453px;
+                    height: 453px;
+                    object-fit: cover;
+                }
+            }
+        }
+        &__el {
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+            min-width: 300px;
+            flex: 1;
+            align-items: flex-start;
+            .title {
+                @include title(#31373f, 400);
+            }
+            .text {
+                width: 90%;
+                @include content(#31373f, 400);
+                span {
+                    color: #c29969;
+                    font-weight: 700;
+                }
+            }
+            .wrapper {
+                margin-top: 18px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                &__card {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    &__title {
+                        @include section-Title(#c29969, 700);
+                    }
+                    &__text {
+                        @include text(#31373f, 400);
+                        width: 70%;
+                    }
+                }
+            }
+            .btn {
+                @include btn(#0f8a9f, 700);
+                background-color: #f0f0f3;
+                border-radius: 91px;
+                padding: 20px 150px;
+                margin-top: 44px;
+                box-shadow:
+                    -20px -20px 20px 0px #ffffff80,
+                    10px 10px 20px 0px #aeaec066,
+                    4px 4px 6px 0px #ffffff80 inset;
+            }
+        }
+    }
+}
